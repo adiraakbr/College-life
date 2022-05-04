@@ -1,0 +1,43 @@
+<!--Adira Rahmana Akbar-->
+<!--24060121140114-->
+<!--Praktikum Dasar Sistem-->
+<!--LAB B1-->
+
+<!DOCTYPE html>
+<html>
+ <head>
+        <title>CSS Float2</title>
+ </head>
+ <body>
+    <h1>Tanpa clearfix</h1>
+    <div>
+        <img src="html logo.png" alt="logo html" width="100" 
+        height="200">
+        <p>HTML (Hyper Text Markup language) adalah bahasa markup untuk mendeskripsikan dokumen atau halaman web. Dokumen HTML terdiri 
+        atas sejumlah tag HTML. Setiap tag HTML digunakan untuk mendeskripsikan konten yang berbeda. HTML dikembangkan mulai tahun 1991 
+        dan hingga saat ini versi terbarunya adalah HTML5.</p>
+    </div>
+    <h1>Dengan clearfix</h1>
+    <div class="clearfix">
+        <img src="html logo.png" alt="logo html" width="100"
+         height="100">
+        <p>HTML (Hyper Text Markup language) adalah bahasa markup untuk mendeskripsikan dokumen atau halaman web.
+        Dokumen HTML terdiri atas sejumlah tag HTML. Setiap tag HTML digunakan untuk mendeskripsikan konten yang berbeda. 
+        HTML dikembangkan mulai tahun 1991 dan hingga saat ini versi terbarunya adalah HTML5.</p>
+    </div>
+    <style>
+        div {
+        border: 3px solid #73AD21;
+        }
+        img {
+        float: right;
+        margin: 0 0 10px 10px;
+        }
+        .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+    </style>
+</body>
+</html>
